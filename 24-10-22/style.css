@@ -1,0 +1,20 @@
+.titolo {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  width: 100%;
+}
+.bottone {
+  display: flex;
+  justify-content: center;
+}
+
+.bottone button {
+  background-color: aqua;
+  font-size: 30px;
+}
+button:hover {
+  cursor: pointer;
+}
