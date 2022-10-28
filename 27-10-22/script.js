@@ -27,6 +27,7 @@ console.log(calcolatrice(5, 5, "*"));
 console.log(calcolatrice(100, 100, "/"));
 console.log(calcolatrice(7, 8, "d"));
 console.log(calcolatrice(32, 2, ""));
+console.log(calcolatrice(20, 20, "-"));
 
 //esercizio numero 2
 const character = {

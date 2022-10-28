@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.testa {
+  display: flex;
+
+  justify-content: center;
+}
+div:hover {
+  text-transform: uppercase;
+  color: red;
+  background-color: black;
+}
+div ul {
+  margin: 0px;
+  padding: 0px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
