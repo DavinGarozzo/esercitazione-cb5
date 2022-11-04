@@ -19,4 +19,4 @@ const createCard = (name, imgUrl, imgAlt, description) => {
   cardEl.append(nameEl, imgEl, parEl);
   return bodyEl.appendChild(cardEl);
 };
-heroes.map((heroe) => createCard(heroe.name, heroe.description, heroe.image));
+heroes.map((heroe) => createCard(heroe.name, heroe.image, heroe.description));
