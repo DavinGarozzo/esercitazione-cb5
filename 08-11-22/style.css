@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.titolo {
+  display: flex;
+}
+.cardpoke {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20 px;
+  border-radius: 16px;
+}
+.cardpoke:hover {
+  transform: scale(1.1);
+}
+.cardpoke img {
+  width: 100px;
+}
