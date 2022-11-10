@@ -1,0 +1,4 @@
+ 1 creare nel dom gli ementi(necessariamente un bottone)
+ 2 creare tutte le fuzioni necessarie(id e advice)
+ 3 creare un evento(dentro il bottone) che mi richiami le funzioni e modifichi il mio dom
+ 4 implementare tutto lo stile soltanto dopo che il tutto risulti funzionante 

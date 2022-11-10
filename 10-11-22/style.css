@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --bkcbutton: #1e90ff;
+  --bkcbody: #1f2632;
+  --bkcard: #323a4a;
+}
+body {
+  background-color: var(--bkcbody);
+  display: flex;
+  justify-content: center;
+}
+.cont {
+  border-radius: 30px;
+  width: 400px;
+  height: auto;
+  font-family: var(--textfont);
+  background-color: var(--bkcard);
+  box-shadow: 5px 5px 20px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-top: 20px 50px;
+}
+
+#btn-generator {
+  transform: translate(0%, 40%);
+  width: 70px;
+  height: auto;
+  font-family: "Manrope";
+  border: whitesmoke;
+  border-radius: 20%;
+  padding: 10px 20px;
+
+  background-color: #71f6a8;
+  box-shadow: 1px 1px 25px #52ffa8;
+  cursor: pointer;
+  transition: 0.7s;
+}
+#btn-generator:hover {
+  box-shadow: 1px 1px 25px #52ffa8;
+}
+
+#id-advice {
+  font-family: "Montserrat", sans-serif;
+}
+#advice {
+  font-family: "Montserrat", sans-serif;
+}
