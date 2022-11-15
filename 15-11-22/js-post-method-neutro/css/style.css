@@ -1,0 +1,38 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: #24404b;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  background-color: #336e7f;
+  border-radius: 15px;
+}
+h1 {
+  text-align: center;
+}
+.container__list {
+  border-radius: 15px;
+  background-color: #398b8e;
+}
+.poke__list {
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  list-style-type: none;
+}
+input {
+  border-radius: 18px;
+  padding: 5px;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}

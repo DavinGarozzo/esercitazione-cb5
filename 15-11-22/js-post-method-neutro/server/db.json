@@ -1,0 +1,39 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Bulbasaur",
+      "type": "grass"
+    },
+    {
+      "id": "2",
+      "name": "Ivysaur",
+      "type": "grass"
+    },
+    {
+      "id": "3",
+      "name": "Charmander",
+      "type": "fire"
+    },
+    {
+      "id": "4",
+      "name": "Charizard",
+      "type": "fire"
+    },
+    {
+      "id": "a7b02316-6658-4d08-8006-8c02d834a5f6",
+      "name": "Charmeleon",
+      "type": "fire"
+    },
+    {
+      "id": "43c70b83-ee1e-4b36-bf71-1efed8deb73a",
+      "name": "",
+      "type": ""
+    },
+    {
+      "id": "2fa91a1f-cc6c-4f33-b136-e6ea31079e46",
+      "name": "",
+      "type": ""
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 let i = 1;
 let result = `https://jsonplaceholder.typicode.com/posts/${i}`;
 const loadingEl = document.querySelector(".loading");
+loadingEl.style.opacity = 0;
 //fetch per richiamare
 fetch(result)
   .then((res) => res.json())
   .then((res) => createCard(res))
   //LOADER CHE PERO' NON FUNZIONA
   .finally(() => {
-    loadingEl.classList.add("active");
-    loadingEl.classList.remove("active");
+    loadingEl.style.opacity = 1;
   });
 
 //dichiarazione costanti
