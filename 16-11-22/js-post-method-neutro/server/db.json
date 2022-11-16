@@ -1,0 +1,19 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Bulbasarur",
+      "type": "Grass"
+    },
+    {
+      "id": "7003b08f-fb1b-471b-b5e4-8bf3365857d1",
+      "name": "Charmander",
+      "type": "Fire"
+    },
+    {
+      "id": "f48a24e2-8efc-465d-9f24-d69c646934cd",
+      "name": "Pikachu",
+      "type": "Elettro"
+    }
+  ]
+}
