@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <h1>Pokédex</h1>
+        <form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            class="search-input"
+            type="text"
+            placeholder="🔍Search a pokemon!..."
+          />
+        </form>
+      </nav>
+      <!-- form pokedex -->
+      <form class="container" name="pokemon" autocomplete="off">
+        <!-- <input type="text" name="poke__id" placeholder="ID del Pokémon" /> -->
+        <input type="text" name="poke__name" placeholder="NOME del Pokémon" />
+        <input type="text" name="poke__type" placeholder="TYPE del Pokémon" />
+        <input class="button" type="submit" />
+      </form>
+      <!-- fine form pokedex -->
+
+      <!-- form pokemon PATCH -->
+      <h3>Sezione Modifica</h3>
+      <form class="containerPatch" name="pokemonPatch" autocomplete="off">
+        <input type="text" placeholder="Insert Id.." name="id" />
+        <input type="text" placeholder="Insert Name.." name="name" />
+        <input type="text" placeholder="Insert Type.." name="type" />
+        <input type="submit" value="Modify" />
+      </form>
+      <!-- fine form pokemon PATCH -->
+      <!-- section card -->
+    </section>
+    <div class="container__list">
+      <ul class="poke__list"></ul>
+      <script type="module" src="./js/main.js"></script>
+      <script type="module" src="./js/utils.js"></script>
+    </div>
+    <!-- fine section card -->
+  </body>
+</html>
