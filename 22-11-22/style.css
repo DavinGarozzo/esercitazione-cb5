@@ -1,0 +1,22 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: #24404b;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.btn {
+  border: 3px solid #24404b;
+  border-radius: 18px;
+  align-items: center;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+input {
+  border-radius: 18px;
+  padding: 5px;
+}
