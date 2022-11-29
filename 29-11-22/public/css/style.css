@@ -32,8 +32,3 @@ h1 {
   border-radius: 10px;
   justify-content: space-evenly;
 }
-ul {
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-}
