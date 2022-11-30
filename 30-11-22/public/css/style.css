@@ -1,0 +1,34 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #24404b;
+}
+h1 {
+  font-size: 50px;
+}
+.backgroundt {
+  background-color: aliceblue;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.attori {
+  background-color: #398b8e;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.card {
+  background-color: #336e7f;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
