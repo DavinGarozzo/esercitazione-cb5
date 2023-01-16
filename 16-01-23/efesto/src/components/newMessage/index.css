@@ -1,0 +1,15 @@
+.NewMessage {
+  background-color: #849974;
+  padding: 15px;
+}
+
+input {
+  border-radius: 8%;
+  padding: 10px;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
