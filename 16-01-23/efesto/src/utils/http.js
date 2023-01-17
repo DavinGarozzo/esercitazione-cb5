@@ -9,6 +9,7 @@ const GET = async (resource) => {
 };
 
 //CHIAMATA POST PER AGGIUNGERE DATI
+
 const POST = async (resource, body) => {
   const res = await fetch(`${BASE_URL}/${resource}`, {
     method: "POST",
@@ -20,4 +21,4 @@ const POST = async (resource, body) => {
   return data;
 };
 
-export { GET };
+export { GET, POST };

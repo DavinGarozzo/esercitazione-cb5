@@ -1,0 +1,15 @@
+.FriendsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-x: scroll;
+  width: 100vw;
+  background-color: #849974;
+}
+
+@media (min-width: 800px) {
+  .FriendsList {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
