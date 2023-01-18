@@ -1,4 +1,4 @@
-.FriendsList {
+.tagSection {
   padding: 10px 20px;
   display: flex;
   flex-direction: row;
@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 800px) {
-  .FriendsList {
+  .tagSection {
     flex-direction: column;
     width: 300px;
     gap: 30px;

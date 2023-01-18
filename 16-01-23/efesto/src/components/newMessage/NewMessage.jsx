@@ -1,64 +1,69 @@
-import { useState, useEffect, POST } from "react";
+import { useState, useEffect } from "react";
+import { POST } from "../../utils/http";
+
 import "./index.css";
 
 const NewMessage = () => {
-  const [inputs, setInputs] = useState({});
+  const [messageText, setMessageText] = useState("");
+  const [authorText, setAuthorText] = useState("");
+  const [titleText, setTitleText] = useState("");
+  const [urlText, setUrlText] = useState("");
+  const [messagePost, setMessagePost] = useState({});
 
-  //Per accedere ai campi nel gestore eventi utilizzare
-  //event.target.namee .event.target.value
-  //Per aggiornare lo stato, utilizzare le parentesi quadre
-  // attorno al nome della proprietà.
-
-  const onHandleInput = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setInputs((values) => ({ ...values, [name]: value }));
-  };
+  const onHandleMessageText = (e) => setMessageText(e.target.value);
+  const onHandleAuthorText = (e) => setAuthorText(e.target.value);
+  const onHandleTitleText = (e) => setTitleText(e.target.value);
+  const onHandleUrlText = (e) => setUrlText(e.target.value);
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(inputs);
+    setMessagePost({
+      id: 1,
+      userId: 9,
+      image: urlText,
+      firstName: authorText,
+      title: titleText,
+      body: messageText,
+    });
   };
 
-  //NUOVI INPUT VISIBILI IN CONSOLE DENTRO UN OGGETTO
+  useEffect(() => {
+    if (messagePost.firstName && messagePost.title)
+      POST("posts/add", messagePost);
+  }, [messagePost]);
+
   return (
     <div className="NewMessage">
-      <h1 className="NewMessage__title">Project Efesto</h1>
-
       <form onSubmit={onSubmit}>
         <input
+          value={authorText}
+          onChange={onHandleAuthorText}
           type="text"
-          name="username"
-          value={inputs.username || ""}
-          onChange={onHandleInput}
-          placeholder="@Username"
+          placeholder="Author..."
           required
         />
         <input
+          value={titleText}
+          onChange={onHandleTitleText}
           type="text"
-          name="title"
-          value={inputs.title || ""}
-          onChange={onHandleInput}
-          placeholder="Il titolo della tua idea"
+          placeholder="Title..."
           required
         />
         <input
+          value={messageText}
+          onChange={onHandleMessageText}
           type="text"
-          name="body"
-          value={inputs.body || ""}
-          onChange={onHandleInput}
-          placeholder="La tua idea"
+          placeholder="Message..."
           required
         />
         <input
+          value={urlText}
+          onChange={onHandleUrlText}
           type="text"
-          name="image"
-          value={inputs.image || ""}
-          onChange={onHandleInput}
-          placeholder="Inserisci l'URL della tua immagine"
+          placeholder="Img url..."
           required
         />
-        <input className="NewMessage__button" type="submit" value="Send" />
+        <input className="NewMessage" type="submit" value="Send" />
       </form>
     </div>
   );
