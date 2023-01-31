@@ -4,6 +4,7 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Users from "./routes/users";
 import UserList from "./routes/userList";
+import Posts from "./routes/posts";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import "./index.css";
@@ -17,6 +18,19 @@ const router = createBrowserRouter([
   {
     path: "/contacts",
     element: <Root />,
+  },
+  {
+    path: "/post",
+    element: (
+      <h1>
+        Hello buddy! <br></br>This is the post page, please add "s" after 'post'
+        in the search bar to see the full list of our POSTS
+      </h1>
+    ),
+  },
+  {
+    path: "/posts/:post",
+    element: <Posts />,
   },
   {
     path: "/user",

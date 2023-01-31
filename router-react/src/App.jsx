@@ -4,10 +4,10 @@ import styles from "./App.module.scss";
 function App() {
   return (
     <div className={styles.App}>
-      <h1>Hello!</h1>
-      <a href="/contacts">Vai ai contatti</a>
+      <h1>Hellooo!!!</h1>
+      <a href="/post">POST</a>
       <br />
-      <Link to="/contacts">Vai a contatti</Link>
+      <Link to="/user">USER</Link>
     </div>
   );
 }

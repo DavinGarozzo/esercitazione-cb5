@@ -1,25 +1,22 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+// import { GET } from "../utils/api";
+// import { useState, useEffect } from "react";
+// import UserCard from "../components/UserCard";
+// import styles from "./styles/users.module.scss";
 
-function UserList() {
-  const [data, setData] = useState([]);
-  let { user } = useParams();
+// export default function Users() {
+//   const [userList, setUserList] = useState([]);
 
-  useEffect(() => {
-    fetch(`https://dummyjson.com/users/${user}`)
-      .then((response) => response.json())
-      .then((data) => setData(data));
-  }, [user]);
+//   useEffect(() => {
+//     GET("users?limit=10").then(({ users }) => setUserList(users));
+//   }, []);
 
-  const listItems = data.map((item) => (
-    <div className="contenitore">
-      <li key={item.id}>
-        {item.firstName} {item.lastName}
-      </li>
-    </div>
-  ));
-
-  return <ul>{listItems}</ul>;
-}
-
-export default UserList;
+//   return (
+//     <>
+//       <div className={styles.Users}>
+//         {userList.map((user) => (
+//           <UserCard userData={user} key={user.id} />
+//         ))}
+//       </div>
+//     </>
+//   );
+// }

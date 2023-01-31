@@ -25,10 +25,10 @@ export default function Root() {
         <nav>
           <ul>
             <li>
-              <Link to={`/contacts/1`}>Your Name</Link>
+              <Link to={`/post/1`}>POST</Link>
             </li>
             <li>
-              <Link to={`/contacts/2`}>Your Friend</Link>
+              <Link to={`/user/1`}>USER</Link>
             </li>
           </ul>
         </nav>
