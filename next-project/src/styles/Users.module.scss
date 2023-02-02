@@ -6,6 +6,8 @@
   justify-content: center;
 }
 .usersList {
+  background-color: black;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +16,25 @@
   padding-bottom: 40px;
 }
 .usersList h3 {
-  text-decoration: underline;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .usersList h3:hover {
-  color: red;
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+}
+.footer {
+  text-align: center;
+  justify-content: center;
+  background-color: #54b3d6;
+  color: black;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.footer:hover {
+  text-decoration: underline;
+  text-transform: uppercase;
 }
